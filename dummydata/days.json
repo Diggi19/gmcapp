@@ -1,0 +1,22 @@
+[
+    {
+        "day": "Monday",
+        "date": "01/01/2020",
+        "slots":10,
+        "appoinments":[
+            {
+                "id":1,
+                "name":"John",
+                "age":25,
+                "dob":"01/01/2000",
+                "gender":"male",
+                "phone":2276491033,
+                "procedure":"general body checkup",
+                "duration":"45min",
+                "slots_req":2
+            }
+        ],
+        "doctor":"Dr.someone"
+
+    }
+]

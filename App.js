@@ -1,11 +1,38 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import { Platform } from 'react-native-web';
+import AppNavigation from './Navigation/AppNavigation';
+import AuthNavigation from './Navigation/AuthNavigation';
+import AboutScreen from './Screens/AboutScreen/AboutScreen';
+import AppoinmentListScreen from './Screens/AppoinmentListScreen/AppoinmentListScreen';
+import AuthForm from './Screens/AuthForms/AuthForm';
+import EditPreviewScreen from './Screens/DataUpdateScreen/EditPreviewScreen';
+import EditScreen from './Screens/EditScreen/EditScreen';
+import FormScreen from './Screens/formScreen/FormScreen';
+import HomeScreen from './Screens/HomeScreen/HomeScreen';
+import SinglePatientScreen from './Screens/SinglePatientScreen/SinglePatientScreen';
+import StartScreen from './Screens/StartScreen/StartScreen';
+import UpdateFormScreen from './Screens/UpdateFormScreen/UpdateFormScreen';
 export default function App() {
+  const [isAuth, setIsAuth] = React.useState(false);
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      
+      {/* <FormScreen /> */}
+      {/* <HomeScreen/> */}
+      {/* <AuthForm/> */}
+      {/* <StartScreen/> */}
+      {/* <AppoinmentListScreen/> */}
+      {/* <EditScreen/> */}
+      {/* <EditPreviewScreen/> */}
+      {/* <AboutScreen/> */}
+      {/* <UpdateFormScreen/> */}
+      {/* <SinglePatientScreen/> */}
+      {/* <AppNavigation/> */}
+      {/* <AuthNavigation/> */}
+      {isAuth ? <AppNavigation isAuth={isAuth}/> : <AuthForm isAuth={isAuth} setIsAuth={setIsAuth}/>}
+      <StatusBar style="light" hidden={true} />
     </View>
   );
 }
@@ -14,7 +41,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop:0
   },
 });

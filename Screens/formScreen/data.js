@@ -1,0 +1,89 @@
+export const dummyData = [
+    {
+        id:1,
+        type:'Name',
+        value:'name',
+    },
+    {
+        id:2,
+        type:'Age',
+        value:'age',
+    },
+    {
+        id:3,
+        type:'Hospital id',
+        value:'hospid',
+    },
+    {
+        id:4,
+        type:'Gender',
+        value:'gender'
+    },
+    {
+        id:5,
+        type:'Phone',
+        value:'phone'
+    },
+    {
+        id:6,
+        type:'Doctor id',
+        value:'docid'
+    },
+    {
+        id:7,
+        type:'Patient id',
+        value:'patientid'
+    },
+    {
+        id:8,
+        type:'Date of application',
+        value:'date_appt'
+    },
+    {
+        id:9,
+        type:'Findings plan',
+        value:'findingsplan'
+    },{
+        id:10,
+        type:'Number of slots',
+        value:'num_slots'
+    },
+    {
+        id:11,
+        type:'Indication',
+        value:'indication'
+    },
+    {
+        id:12,
+        type:'Platlets',   
+        value:'platlet'
+    },
+    {
+        id:13,
+        type:'Creatinine',
+        value:'creatinine'
+    },
+    {
+        id:14,
+        type:'HIV',
+        value:'hiv'
+    },{
+        id:15,
+        type:'Echo_valve',
+        value:'echo_valve'
+    },{
+        id:16,
+        type:'Procedure planned',
+        value:'procedure_planned'
+    },
+    {
+        id:17,
+        type:'DDs/SyNum',
+        value:'ddssynum'
+    },
+    {
+        id:18,
+        type:'Duration',
+        value:'duration'
+    }
+]

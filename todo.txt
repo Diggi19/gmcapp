@@ -1,0 +1,129 @@
+1. account modal ✔
+2. appointments list 
+3. individual appoinment screen 
+4. edit list screen
+5. individual edit screen
+6. detailings
+
+
+<View style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"name"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    onBlur={handleBlur()}
+                                    onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Age"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Date of Birth"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Gender"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Phone"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Patient id"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Procedure"} 
+                                    numberOfLines={4}
+                                    textBreakStrategy={'balanced'}
+                                    multiline={true}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Duration"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    onBlur={handleBlur("Duration")}
+                                    onChangeText={handleChange("Duration")}
+                                    value={values.duration}
+                                />
+                            </View>
+                            <View  style={styles.textcontainer}>
+                                {/* <Text style={styles.text}>{name}</Text> */}
+                                <TextInput
+                                    style={[styles.input,{height:50}]}
+                                    placeholder={"Slots_req"} 
+                                    numberOfLines={1}
+                                    textBreakStrategy={'simple'}
+                                    multiline={false}
+                                    placeholderTextColor="#c1bbbb"
+                                    // onBlur={handleBlur()}
+                                    // onChangeText={handleChange(values)}
+                                />
+                            </View>
+                            
+                           
+                        

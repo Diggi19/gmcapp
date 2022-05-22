@@ -1,14 +1,16 @@
 {
   "expo": {
-    "name": "gmc",
+    "name": "Doc's Aid",
+    "privacy": "public",
+    "description":"this app allow users to book appoinments, view appoinmets on different dates and also edit appoinments",
     "slug": "gmc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/donesplash.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
