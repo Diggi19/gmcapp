@@ -6,12 +6,15 @@ import AuthForm from './Screens/AuthForms/AuthForm';
 import { AuthContext } from './contextapi/Context';
 export default function App() {
   const [isAuth, setisAuth] = React.useState(false);
+  const [userdata, setuserdata] = React.useState({});
   
   return (
     <AuthContext.Provider
       value={{
         isAuth,
-        setisAuth
+        setisAuth,
+        userdata,
+        setuserdata
       }}
     >
     <View style={styles.container}>
