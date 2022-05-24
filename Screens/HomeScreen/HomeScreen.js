@@ -5,8 +5,10 @@ import axios from 'axios'
 
 // navigation
 import { useNavigation } from '@react-navigation/native';
+import { AuthContext } from '../../contextapi/Context';
 const HomeScreen = () => {
     const navigation = useNavigation()
+    const {isAuth,setisAuth} = React.useContext(AuthContext)
 
     const [modalVisible, setModalVisible] = React.useState(false);
 
@@ -42,7 +44,7 @@ const HomeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.btnhold}>
-                        <TouchableOpacity style={[styles.btn,{backgroundColor:'#959496'}]}>
+                        <TouchableOpacity style={[styles.btn,{backgroundColor:'#959496'}]} onPress={()=>setisAuth(false)}>
                             <Text style={styles.actext}>LogOut</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={[styles.btn,{backgroundColor:'#f78080'}]} onPress={()=>setModalVisible(false)}>

@@ -14,9 +14,17 @@ import HomeScreen from './Screens/HomeScreen/HomeScreen';
 import SinglePatientScreen from './Screens/SinglePatientScreen/SinglePatientScreen';
 import StartScreen from './Screens/StartScreen/StartScreen';
 import UpdateFormScreen from './Screens/UpdateFormScreen/UpdateFormScreen';
+import { AuthContext } from './contextapi/Context';
 export default function App() {
-  const [isAuth, setIsAuth] = React.useState(false);
+  const [isAuth, setisAuth] = React.useState(false);
+  
   return (
+    <AuthContext.Provider
+      value={{
+        isAuth,
+        setisAuth
+      }}
+    >
     <View style={styles.container}>
       
       {/* <FormScreen /> */}
@@ -31,9 +39,10 @@ export default function App() {
       {/* <SinglePatientScreen/> */}
       {/* <AppNavigation/> */}
       {/* <AuthNavigation/> */}
-      {isAuth ? <AppNavigation isAuth={isAuth}/> : <AuthForm isAuth={isAuth} setIsAuth={setIsAuth}/>}
+      {isAuth ? <AppNavigation /> : <AuthForm/>}
       <StatusBar style="light" hidden={true} />
     </View>
+    </AuthContext.Provider>
   );
 }
 

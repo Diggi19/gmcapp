@@ -2,16 +2,19 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'reac
 import React from 'react'
 import { Formik } from 'formik'
 import axios from 'axios'
+import RNSecureStorage, { ACCESSIBLE } from 'rn-secure-storage'
+import { AuthContext } from '../../contextapi/Context'
 
-const AuthForm = ({setIsAuth}) => {
+const AuthForm = () => {
+    const {isAuth,setisAuth} = React.useContext(AuthContext)
     const [signup,setsignup] = React.useState(true)
-
+    console.log(isAuth)
     const handleLogin = (email,password) => {
        axios.post('http://192.168.0.155:3000/auth/login',{email,password})
         .then(res => {
           console.log(res)
-          if (res.data.token) {
-            setIsAuth(true)
+          if (res.data) {
+            setisAuth(true)
           }
         })
         .catch(err => {
@@ -24,7 +27,8 @@ const AuthForm = ({setIsAuth}) => {
       .then(res => {
         console.log(res)
         if (res.data) {
-          setIsAuth(true)
+          
+          setisAuth(true)
         }
       })
       .catch(err => {
